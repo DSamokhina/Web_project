@@ -1,0 +1,101 @@
+nav {
+    display: block;
+    position: relative;
+}
+nav:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    background: linear-gradient(90deg,
+    #EBF0F3 20%, #EBF0F3 25%,
+    #9BB0C1 40%, #9BB0C1 50%,
+    #5D8BAD 60%, #5D8BAD 75%,
+    #041E34 80%, #041E34 100%);
+}
+ul {
+    width: 1000px;
+    margin: 0 auto; /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 0;
+    list-style: none; /*убираем маркеры списка*/
+    overflow: hidden;
+}
+li {
+    float: left;
+    width: 25%;
+}
+a {
+    text-decoration: none;    /*убираем подчеркивание текста ссылок*/
+    text-align: center;
+    display: block;
+    color: #868686;
+    padding: 0.5em 0;
+    font-size: 2em;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    font-family: 'Montez', cursive; /*скачать шрифт можно с сайта https://www.google.com/fonts/*/
+}
+a:hover {
+    color: #5D8BAD;     /* цвет при навееднии на пункт верхнего меню */
+}
+
+h1 {
+    text-align: center;
+    color: #041E34;
+    font-family: 'Montez', cursive; /*скачать шрифт можно с сайта https://www.google.com/fonts/*/
+}
+
+
+.block1 {
+    width: 250px;
+    height: 250px;
+    left: 300px;
+    padding: 5px;    /* отступы внутри */
+    border: solid 1px black;
+    text-align: center; /* размещение текста */
+    color: #4064ad; /* цвет текста */
+    position: absolute;
+}
+.block2 {
+    width: 250px;
+    height: 250px;
+    left: 300px;
+    padding: 5px;     /* отступы внутри */
+    border: solid 1px black;
+    text-align: center; /* размещение текста */
+    color: #4064ad; /* цвет текста */
+    top: 470px;
+    position: absolute;   /* указывает что top  отсчитывается относительно края окна браузера */
+}
+
+.block3 {
+    width: 250px;
+    height: 250px;
+    left: 800px;
+    padding: 5px;    /* отступы внутри */
+    border: solid 1px black;
+    text-align: center; /* размещение текста */
+    color: #4064ad; /* цвет текста */
+    position: absolute;
+}
+.block4 {
+    width: 250px;
+    height: 250px;
+    left: 800px;
+    padding: 5px;     /* отступы внутри */
+    border: solid 1px black;
+    text-align: center; /* размещение текста */
+    color: #4064ad; /* цвет текста */
+    top: 470px;
+    position: absolute;   /* указывает что top  отсчитывается относительно края окна браузера */
+}
+
+/*p {
+    text-align: center;
+    color: #5D8BAD;
+    font-family: 'Montez', cursive;
+    top: 800px;
+    position: absolute;
+}  */
