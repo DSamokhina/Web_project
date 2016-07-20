@@ -47,55 +47,65 @@ h1 {
     font-family: 'Montez', cursive; /*скачать шрифт можно с сайта https://www.google.com/fonts/*/
 }
 
+.block_main {
+    border: 1px solid black;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    height: 1100px;
+}
+
+.block {
+    padding: 5px;    /* отступы внутри */
+    border: solid 1px black;
+    text-align: center; /* размещение текста */
+    color: #4064ad; /* цвет текста */
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-size: contain; /*Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока.*/
+}
 
 .block1 {
-    width: 250px;
-    height: 250px;
-    left: 300px;
-    padding: 5px;    /* отступы внутри */
-    border: solid 1px black;
-    text-align: center; /* размещение текста */
-    color: #4064ad; /* цвет текста */
-    position: absolute;
+    left: 150px;
+    top:100px;
+    background: url(../images/1.jpeg) 100% no-repeat;
 }
 .block2 {
-    width: 250px;
-    height: 250px;
-    left: 300px;
-    padding: 5px;     /* отступы внутри */
-    border: solid 1px black;
-    text-align: center; /* размещение текста */
-    color: #4064ad; /* цвет текста */
-    top: 470px;
-    position: absolute;   /* указывает что top  отсчитывается относительно края окна браузера */
+    left: 650px;
+    top: 100px;
+    background: url(../images/2.jpg) 100% no-repeat;
 }
-
 .block3 {
-    width: 250px;
-    height: 250px;
-    left: 800px;
-    padding: 5px;    /* отступы внутри */
-    border: solid 1px black;
-    text-align: center; /* размещение текста */
-    color: #4064ad; /* цвет текста */
-    position: absolute;
+    left: 150px;
+    top:650px;
+    background: url(../images/3.jpg) 100% no-repeat;
 }
 .block4 {
-    width: 250px;
-    height: 250px;
-    left: 800px;
-    padding: 5px;     /* отступы внутри */
-    border: solid 1px black;
-    text-align: center; /* размещение текста */
-    color: #4064ad; /* цвет текста */
-    top: 470px;
-    position: absolute;   /* указывает что top  отсчитывается относительно края окна браузера */
+    left: 650px;
+    top:650px;
+    background: url(../images/4.jpg) 100% no-repeat;
 }
 
-/*p {
+.block3 img {
+    border: 2px solid #8b8e4b; /* Параметры рамки */
+}
+.block3 p {
+    margin: 0; /* Отступы */
+}
+
+p {
     text-align: center;
     color: #5D8BAD;
     font-family: 'Montez', cursive;
-    top: 800px;
-    position: absolute;
-}  */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
