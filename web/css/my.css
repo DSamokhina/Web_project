@@ -50,13 +50,13 @@ h1 {
 .block_main {
     border: 1px solid black;
     position: absolute;
-    top: 200px;
+    top: 160px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 1100px;
-    height: 1100px;
+    width: 1300px;
+    height: 600px;
 }
 
 .block {
@@ -65,30 +65,33 @@ h1 {
     text-align: center; /* размещение текста */
     color: #4064ad; /* цвет текста */
     position: absolute;
-    width: 300px;
-    height: 300px;
-    background-size: contain; /*Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока.*/
-}
+    width: 200px;
+    height: 200px;
+    }
 
 .block1 {
     left: 150px;
-    top:100px;
-    background: url(../images/1.jpeg) 100% no-repeat;
+    top:50px;
+    background: url(../images/1.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .block2 {
-    left: 650px;
-    top: 100px;
-    background: url(../images/2.jpg) 100% no-repeat;
+    left: 500px;
+    top: 50px;
+    background: url(../images/2.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .block3 {
     left: 150px;
-    top:650px;
-    background: url(../images/3.jpg) 100% no-repeat;
-}
-.block4 {
-    left: 650px;
-    top:650px;
-    background: url(../images/4.jpg) 100% no-repeat;
+    top:300px;
+    background: url(../images/3.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .block3 img {
@@ -96,6 +99,70 @@ h1 {
 }
 .block3 p {
     margin: 0; /* Отступы */
+}
+
+.block4 {
+    left: 500px;
+    top:300px;
+    background-image: url(../images/4.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.login_main {
+    left: 900px;
+    top:50px;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    position: absolute;
+
+    -webkit-birder-radius: 6px;  /* Строчки для закругления */
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+
+    background: linear-gradient(#eeefef, #ffffff 10%);
+}
+
+.login_main {
+    left: 900px;
+    top:50px;
+    border: 1px solid black;
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    position: absolute;
+
+    -webkit-birder-radius: 6px;  /* Строчки для закругления */
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+
+    background: linear-gradient(#eeefef, #ffffff 10%);
+
+}
+
+.name {
+     top:10px;
+     border: 1px solid black;
+     width: 250px;
+     position: absolute;
+ }
+
+.password {
+    top:40px;
+    border: 1px solid black;
+    width: 250px;
+    position: absolute;
+}
+
+.login {
+    top:70px;
+    width: 100px;
+    height: 50px;
+    position: absolute;
 }
 
 p {
@@ -109,3 +176,4 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+
