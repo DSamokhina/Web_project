@@ -1,0 +1,169 @@
+@charset "UTF-8";
+nav {
+  display: block;
+  position: relative; }
+
+nav:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  background: linear-gradient(90deg, #EBF0F3 20%, #EBF0F3 25%, #9BB0C1 40%, #9BB0C1 50%, #5D8BAD 60%, #5D8BAD 75%, #041E34 80%, #041E34 100%); }
+
+ul {
+  width: 1000px;
+  margin: 0 auto;
+  /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0;
+  list-style: none;
+  /*убираем маркеры списка*/
+  overflow: hidden; }
+
+li {
+  float: left;
+  width: 25%; }
+
+a {
+  text-decoration: none;
+  /*убираем подчеркивание текста ссылок*/
+  text-align: center;
+  display: block;
+  color: #868686;
+  padding: 0.5em 0;
+  font-size: 2em;
+  font-weight: bold;
+  transition: 0.5s ease-in-out;
+  font-family: 'Montez', cursive;
+  /*скачать шрифт можно с сайта https://www.google.com/fonts/*/ }
+
+a:hover {
+  color: #5D8BAD;
+  /* цвет при навееднии на пункт верхнего меню */ }
+
+h1 {
+  text-align: center;
+  color: #041E34;
+  font-family: 'Montez', cursive;
+  /*скачать шрифт можно с сайта https://www.google.com/fonts/*/ }
+
+.block_main {
+  border: 1px solid black;
+  position: absolute;
+  top: 160px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1300px;
+  height: 600px; }
+
+.block {
+  padding: 5px;
+  /* отступы внутри */
+  border: solid 1px black;
+  text-align: center;
+  /* размещение текста */
+  color: #4064ad;
+  /* цвет текста */
+  position: absolute;
+  width: 200px;
+  height: 200px; }
+
+.block1 {
+  left: 150px;
+  top: 50px;
+  background: url(../images/1.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.block2 {
+  left: 500px;
+  top: 50px;
+  background: url(../images/2.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.block3 {
+  left: 150px;
+  top: 300px;
+  background: url(../images/3.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.block3 img {
+  border: 2px solid #8b8e4b;
+  /* Параметры рамки */ }
+
+.block3 p {
+  margin: 0;
+  /* Отступы */ }
+
+.block4 {
+  left: 500px;
+  top: 300px;
+  background-image: url(../images/4.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.login_main {
+  left: 900px;
+  top: 50px;
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  position: absolute;
+  -webkit-birder-radius: 6px;
+  /* Строчки для закругления */
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: linear-gradient(#eeefef, #ffffff 10%); }
+
+.login_main {
+  left: 900px;
+  top: 50px;
+  border: 1px solid black;
+  width: 300px;
+  height: 150px;
+  padding: 10px;
+  position: absolute;
+  -webkit-birder-radius: 6px;
+  /* Строчки для закругления */
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: linear-gradient(#eeefef, #ffffff 10%); }
+
+.name {
+  top: 10px;
+  border: 1px solid black;
+  width: 250px;
+  position: absolute; }
+
+.password {
+  top: 40px;
+  border: 1px solid black;
+  width: 250px;
+  position: absolute; }
+
+.login {
+  top: 70px;
+  width: 100px;
+  height: 50px;
+  position: absolute; }
+
+p {
+  text-align: center;
+  color: #5D8BAD;
+  font-family: 'Montez', cursive;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
