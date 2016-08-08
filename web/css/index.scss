@@ -1,3 +1,133 @@
+body {
+    background-color: #FFFFFF;
+    min-width: 1250px;
+    font-family: Helvetica;
+}
+.main__container {
+    margin: auto;
+    width: 1200px;
+    //http://www.cssmatic.com/box-shadow
+    -webkit-box-shadow: -1px -1px 30px 19px rgba(0,64,46,0.44);
+    -moz-box-shadow: -1px -1px 30px 19px rgba(0,64,46,0.44);
+    box-shadow: -1px -1px 30px 19px rgba(0,64,46,0.44);
+    &-header {
+        height: 50px;
+        width: 100%;
+        background-color: #00402e;
+            & .header__buttons {
+                width: 1000px;
+                height: 100%;
+                margin: auto;
+                & .header__button {
+                    color: #efefef;
+                    font-family: Helvetica-Light;
+                    font-size: 13px;
+                    line-height: 50px;
+                    margin-left: 20px;
+                    cursor: pointer;
+                    display: inline-block;
+                    width: 200px;
+                    height: 50px;
+                    text-align: center;
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                    &.m-selected {
+                        position: relative;
+                        font-weight: bold;
+                        color: #FFFFFF;
+                        &:after {
+                            //http://apps.eky.hk/css-triangle-generator/
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 0 10px 10px 10px;
+                            border-color: transparent transparent #006a4e transparent;
+
+                            content:'';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            margin:auto;
+                        }
+                    }
+                }
+            }
+    }
+    &-logoheader {
+        height: 100px;
+        width: 100%;
+        background-color: #006a4e;
+        display: inline-flex;
+        position: relative;
+        & .logoheader-name {
+            height: 100px;
+            display: inline-block;
+            width: 200px;
+            color:white;
+            line-height: 100px;
+            text-align: center;
+            font-size: 18px;
+            margin-left: 50px;
+        }
+        & .logoheader-icon {
+            height: 50px;
+            width: 50px;
+            margin-top: 25px;
+            margin-left: 25px;
+            background-image: url('../images/icons/i-logo.png');
+            display: inline-block;
+            background-size: cover;
+        }
+        & .logoheader-logincontainer {
+            background-color: #005a42;
+            height: 50px;
+            width: 150px;
+            margin-right: 50px;
+            margin-top: 25px;
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+            color: white;
+            padding-left: 50px;
+            line-height: 50px;
+            font-size: 18px;
+            &:before {
+                width: 32px;
+                height: 32px;
+                content: '';
+                position: absolute;
+                left: 9px;
+                top: 9px;
+                background-image: url('../images/icons/i-lock.png');
+            }
+            &:after {
+                width: 32px;
+                height: 32px;
+                content: '';
+                position: absolute;
+                right: 9px;
+                top: 9px;
+                background-image: url('../images/icons/i-down.png');
+            }
+            &:hover {
+                background-color: #004a36;
+                &:after {
+                    background-image: url('../images/icons/i-up.png');
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
 nav {
     display: block;
     position: relative;

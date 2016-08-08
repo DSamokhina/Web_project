@@ -4,33 +4,44 @@ html
         link(href="/css/index.css" rel="stylesheet")
         meta(http-equiv="Content-Type" content="text/html; charset=utf-8/")
     body
-        nav
-            ul
-                li
-                    a(href="#") Планирование
-                li
-                    a(href="#") Транзакции
-                li
-                    a(href="#") Анализ
-                li
-                    a(href="#") Друзья
-        h1 Ваш помощник в мире финансов
-            div(class="block_main")
-                div(class="block block1") Денежные транзакции
-                div(class="block block2") Планирование
-                div(class="block block3") Анализ расходов
-                div(class="block block4") Друзья
+        div(class='main__container')
+            div(class='main__container-header')
+                div(class='header__buttons')
+                    div(class='header__button m-selected') Личные финансы
+                    div(class='header__button') Корпоративный сектор
+            div(class='main__container-logoheader')
+                div(class='logoheader-name') PERSONAL FINANCE ASSISTANT
+                div(class='logoheader-icon')
 
-                div(class="login_main")
-                    div(class="mainform")
-                        p(class="name")
-                            input(type="text" id='login' name="login" placeholder="Login")
-                            label(for="login") Логин
-                        p(class="password")
-                            input(type="text" id='password' name="password" value="password")
-                            label(for="password") Пароль
-                        p(class="login")
-                            input(type="submit" value="Войти")
-                p Учитесь управлять своими деньгами, и они не смогут управлять вами
+                div(class='logoheader-logincontainer') Вход
+
+        //nav
+        //    ul
+        //        li
+        //            a(href="#") Планирование
+        //        li
+        //            a(href="#") Транзакции
+        //        li
+        //            a(href="#") Анализ
+        //        li
+        //            a(href="#") Друзья
+        //h1 Ваш помощник в мире финансов
+        //    div(class="block_main")
+        //        div(class="block block1") Денежные транзакции
+        //        div(class="block block2") Планирование
+        //        div(class="block block3") Анализ расходов
+        //        div(class="block block4") Друзья
+        //
+        //        div(class="login_main")
+        //            div(class="mainform")
+        //                p(class="name")
+        //                    input(type="text" id='login' name="login" placeholder="Login")
+        //                    label(for="login") Логин
+        //                p(class="password")
+        //                    input(type="text" id='password' name="password" value="password")
+        //                    label(for="password") Пароль
+        //                p(class="login")
+        //                    input(type="submit" value="Войти")
+        //        p Учитесь управлять своими деньгами, и они не смогут управлять вами
 
         script(type='text/javascript' src='/js/index.js')

@@ -1,4 +1,109 @@
 @charset "UTF-8";
+body {
+  background-color: #FFFFFF;
+  min-width: 1250px;
+  font-family: Helvetica; }
+
+.main__container {
+  margin: auto;
+  width: 1200px;
+  -webkit-box-shadow: -1px -1px 30px 19px rgba(0, 64, 46, 0.44);
+  -moz-box-shadow: -1px -1px 30px 19px rgba(0, 64, 46, 0.44);
+  box-shadow: -1px -1px 30px 19px rgba(0, 64, 46, 0.44); }
+  .main__container-header {
+    height: 50px;
+    width: 100%;
+    background-color: #00402e; }
+    .main__container-header .header__buttons {
+      width: 1000px;
+      height: 100%;
+      margin: auto; }
+      .main__container-header .header__buttons .header__button {
+        color: #efefef;
+        font-family: Helvetica-Light;
+        font-size: 13px;
+        line-height: 50px;
+        margin-left: 20px;
+        cursor: pointer;
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        text-align: center; }
+        .main__container-header .header__buttons .header__button:hover {
+          opacity: 0.7; }
+        .main__container-header .header__buttons .header__button.m-selected {
+          position: relative;
+          font-weight: bold;
+          color: #FFFFFF; }
+          .main__container-header .header__buttons .header__button.m-selected:after {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 10px 10px 10px;
+            border-color: transparent transparent #006a4e transparent;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto; }
+  .main__container-logoheader {
+    height: 100px;
+    width: 100%;
+    background-color: #006a4e;
+    display: inline-flex;
+    position: relative; }
+    .main__container-logoheader .logoheader-name {
+      height: 100px;
+      display: inline-block;
+      width: 200px;
+      color: white;
+      line-height: 100px;
+      text-align: center;
+      font-size: 18px;
+      margin-left: 50px; }
+    .main__container-logoheader .logoheader-icon {
+      height: 50px;
+      width: 50px;
+      margin-top: 25px;
+      margin-left: 25px;
+      background-image: url("../images/icons/i-logo.png");
+      display: inline-block;
+      background-size: cover; }
+    .main__container-logoheader .logoheader-logincontainer {
+      background-color: #005a42;
+      height: 50px;
+      width: 150px;
+      margin-right: 50px;
+      margin-top: 25px;
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+      color: white;
+      padding-left: 50px;
+      line-height: 50px;
+      font-size: 18px; }
+      .main__container-logoheader .logoheader-logincontainer:before {
+        width: 32px;
+        height: 32px;
+        content: '';
+        position: absolute;
+        left: 9px;
+        top: 9px;
+        background-image: url("../images/icons/i-lock.png"); }
+      .main__container-logoheader .logoheader-logincontainer:after {
+        width: 32px;
+        height: 32px;
+        content: '';
+        position: absolute;
+        right: 9px;
+        top: 9px;
+        background-image: url("../images/icons/i-down.png"); }
+      .main__container-logoheader .logoheader-logincontainer:hover {
+        background-color: #004a36; }
+        .main__container-logoheader .logoheader-logincontainer:hover:after {
+          background-image: url("../images/icons/i-up.png"); }
+
 nav {
   display: block;
   position: relative; }
