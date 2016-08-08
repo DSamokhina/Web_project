@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   background-color: #FFFFFF;
   min-width: 1250px;
@@ -56,7 +55,7 @@ body {
     .main__container-logoheader .logoheader-name {
       height: 100px;
       display: inline-block;
-      width: 200px;
+      width: 300px;
       color: white;
       line-height: 100px;
       text-align: center;
@@ -70,6 +69,36 @@ body {
       background-image: url("../images/icons/i-logo.png");
       display: inline-block;
       background-size: cover; }
+    .main__container-logoheader .logoheader-buttons {
+      height: 50px;
+      position: absolute;
+      right: 200px;
+      top: 25px;
+      margin-right: 100px; }
+      .main__container-logoheader .logoheader-buttons .logoheader-button {
+        height: 50px;
+        padding-left: 50px;
+        position: relative;
+        color: white;
+        font-size: 15px;
+        line-height: 50px;
+        cursor: pointer;
+        display: inline-block; }
+        .main__container-logoheader .logoheader-buttons .logoheader-button:hover {
+          opacity: 0.7; }
+        .main__container-logoheader .logoheader-buttons .logoheader-button:after {
+          width: 32px;
+          height: 32px;
+          position: absolute;
+          top: 9px;
+          left: 9px;
+          content: ''; }
+        .main__container-logoheader .logoheader-buttons .logoheader-button.m-phone:after {
+          background-image: url("../images/icons/i-phone.png"); }
+        .main__container-logoheader .logoheader-buttons .logoheader-button.m-search:after {
+          background-image: url("../images/icons/i-search.png"); }
+        .main__container-logoheader .logoheader-buttons .logoheader-button.m-faq:after {
+          background-image: url("../images/icons/i-faq.png"); }
     .main__container-logoheader .logoheader-logincontainer {
       background-color: #005a42;
       height: 50px;
@@ -103,172 +132,136 @@ body {
         background-color: #004a36; }
         .main__container-logoheader .logoheader-logincontainer:hover:after {
           background-image: url("../images/icons/i-up.png"); }
-
-nav {
-  display: block;
-  position: relative; }
-
-nav:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 5px;
-  position: absolute;
-  left: 0;
-  background: linear-gradient(90deg, #EBF0F3 20%, #EBF0F3 25%, #9BB0C1 40%, #9BB0C1 50%, #5D8BAD 60%, #5D8BAD 75%, #041E34 80%, #041E34 100%); }
-
-ul {
-  width: 1000px;
-  margin: 0 auto;
-  /*убираем верхнее и нижнее поле, равное 1em*/
-  padding-left: 0;
-  list-style: none;
-  /*убираем маркеры списка*/
-  overflow: hidden; }
-
-li {
-  float: left;
-  width: 25%; }
-
-a {
-  text-decoration: none;
-  /*убираем подчеркивание текста ссылок*/
-  text-align: center;
-  display: block;
-  color: #868686;
-  padding: 0.5em 0;
-  font-size: 2em;
-  font-weight: bold;
-  transition: 0.5s ease-in-out;
-  font-family: 'Montez', cursive;
-  /*скачать шрифт можно с сайта https://www.google.com/fonts/*/ }
-
-a:hover {
-  color: #5D8BAD;
-  /* цвет при навееднии на пункт верхнего меню */ }
-
-h1 {
-  text-align: center;
-  color: #041E34;
-  font-family: 'Montez', cursive;
-  /*скачать шрифт можно с сайта https://www.google.com/fonts/*/ }
-
-.block_main {
-  border: 1px solid black;
-  position: absolute;
-  top: 160px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1300px;
-  height: 600px; }
-
-.block {
-  padding: 5px;
-  /* отступы внутри */
-  border: solid 1px black;
-  text-align: center;
-  /* размещение текста */
-  color: #4064ad;
-  /* цвет текста */
-  position: absolute;
-  width: 200px;
-  height: 200px; }
-
-.block1 {
-  left: 150px;
-  top: 50px;
-  background: url(../images/1.jpeg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.block2 {
-  left: 500px;
-  top: 50px;
-  background: url(../images/2.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.block3 {
-  left: 150px;
-  top: 300px;
-  background: url(../images/3.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.block3 img {
-  border: 2px solid #8b8e4b;
-  /* Параметры рамки */ }
-
-.block3 p {
-  margin: 0;
-  /* Отступы */ }
-
-.block4 {
-  left: 500px;
-  top: 300px;
-  background-image: url(../images/4.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.login_main {
-  left: 900px;
-  top: 50px;
-  border: 1px solid black;
-  width: 300px;
-  height: 300px;
-  padding: 10px;
-  position: absolute;
-  -webkit-birder-radius: 6px;
-  /* Строчки для закругления */
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  background: linear-gradient(#eeefef, #ffffff 10%); }
-
-.login_main {
-  left: 900px;
-  top: 50px;
-  border: 1px solid black;
-  width: 300px;
-  height: 150px;
-  padding: 10px;
-  position: absolute;
-  -webkit-birder-radius: 6px;
-  /* Строчки для закругления */
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  background: linear-gradient(#eeefef, #ffffff 10%); }
-
-.name {
-  top: 10px;
-  border: 1px solid black;
-  width: 250px;
-  position: absolute; }
-
-.password {
-  top: 40px;
-  border: 1px solid black;
-  width: 250px;
-  position: absolute; }
-
-.login {
-  top: 70px;
-  width: 100px;
-  height: 50px;
-  position: absolute; }
-
-p {
-  text-align: center;
-  color: #5D8BAD;
-  font-family: 'Montez', cursive;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto; }
+  .main__container-menubar {
+    height: 50px;
+    width: 100%;
+    background-color: #2d8259; }
+    .main__container-menubar .menu__buttons {
+      width: 1000px;
+      height: 100%;
+      margin: auto; }
+      .main__container-menubar .menu__buttons .menu__button {
+        width: 100px;
+        height: 100%;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        padding-left: 30px;
+        padding-right: 30px;
+        cursor: pointer; }
+        .main__container-menubar .menu__buttons .menu__button:hover {
+          background-color: white;
+          color: #00402e; }
+      .main__container-menubar .menu__buttons .m-home {
+        height: 32px;
+        width: 32px;
+        background-image: url("../images/icons/i-home.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        top: 9px;
+        cursor: pointer; }
+        .main__container-menubar .menu__buttons .m-home:hover {
+          opacity: 0.8;
+          background-color: #2d8259; }
+  .main__container-promo {
+    height: 300px;
+    width: 100%;
+    background-image: url("../images/backgrounds/promo.jpg");
+    background-size: cover;
+    background-position-y: -100px;
+    position: relative; }
+    .main__container-promo-mask {
+      background-color: rgba(255, 255, 255, 0.35);
+      position: absolute;
+      height: 300px;
+      width: 100%;
+      content: ''; }
+    .main__container-promo .promo__header {
+      position: absolute;
+      border-radius: 10px;
+      background-color: rgba(2, 71, 49, 0.5);
+      -webkit-box-shadow: -2px 3px 43px 8px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -2px 3px 43px 8px rgba(0, 0, 0, 0.75);
+      box-shadow: -2px 3px 43px 8px rgba(0, 0, 0, 0.75);
+      width: 700px;
+      top: 30px;
+      padding: 20px;
+      padding-bottom: 40px;
+      left: 0;
+      right: 0;
+      font-size: 40px;
+      font-weight: bold;
+      margin: auto;
+      text-align: center;
+      color: white; }
+    .main__container-promo .promo__lozung {
+      position: absolute;
+      width: 100%;
+      bottom: 130px;
+      text-align: center;
+      color: white;
+      font-size: 15px; }
+    .main__container-promo .promo__registerbutton {
+      position: absolute;
+      bottom: 30px;
+      height: 50px;
+      width: 150px;
+      line-height: 50px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #fd8a10;
+      border-radius: 4px;
+      margin: auto;
+      left: 0;
+      right: 0;
+      cursor: pointer; }
+      .main__container-promo .promo__registerbutton:hover {
+        background-color: #6fa115; }
+    .main__container-promo .promo__questions {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 190px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.4);
+      line-height: 40px;
+      font-size: 14px;
+      padding-left: 10px;
+      cursor: pointer;
+      color: #FFFFFF; }
+      .main__container-promo .promo__questions:after {
+        position: absolute;
+        right: 4;
+        top: 4;
+        content: '';
+        width: 32px;
+        height: 32px;
+        background-image: url("../images/icons/i-faq.png"); }
+      .main__container-promo .promo__questions:hover {
+        opacity: 0.8; }
+  .main__container-tezis {
+    background-color: #f5f5f5;
+    height: 200px;
+    width: 100%;
+    position: relative; }
+    .main__container-tezis:after {
+      background-image: url("../images/icons/i-leaf.png");
+      height: 128px;
+      width: 128px;
+      background-size: contain;
+      position: absolute;
+      bottom: -64px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      content: ''; }
+  .main__container-footer {
+    background: #679298;
+    background: linear-gradient(to right, #679298 0%, #69998f 100%);
+    height: 80px;
+    width: 100%; }
