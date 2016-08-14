@@ -1,13 +1,8 @@
 {
   "name": "web_project",
   "version": "1.0.0",
-  "description": "",
+  "description": "tinkoff web project",
   "main": "app.js",
-  "dependencies": {
-    "koa": "^1.2.1",
-    "koa-static": "^2.0.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,10 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/DSamokhina/Web_project.git"
   },
-  "author": "",
+  "author": "DSamokhina",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DSamokhina/Web_project/issues"
   },
-  "homepage": "https://github.com/DSamokhina/Web_project#readme"
+  "homepage": "https://github.com/DSamokhina/Web_project#readme",
+  "dependencies": {
+    "koa": "^1.2.1",
+    "koa-static": "^2.0.0"
+  }
 }
