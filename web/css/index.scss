@@ -145,20 +145,8 @@ body {
                 top: 9px;
                 background-image: url('../images/icons/i-lock.png');
             }
-            &:after {
-                width: 32px;
-                height: 32px;
-                content: '';
-                position: absolute;
-                right: 9px;
-                top: 9px;
-                background-image: url('../images/icons/i-down.png');
-            }
             &:hover {
                 background-color: #004a36;
-                &:after {
-                    background-image: url('../images/icons/i-up.png');
-                }
             }
         }
     }

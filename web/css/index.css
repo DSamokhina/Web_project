@@ -120,18 +120,8 @@ body {
         left: 9px;
         top: 9px;
         background-image: url("../images/icons/i-lock.png"); }
-      .main__container-logoheader .logoheader-logincontainer:after {
-        width: 32px;
-        height: 32px;
-        content: '';
-        position: absolute;
-        right: 9px;
-        top: 9px;
-        background-image: url("../images/icons/i-down.png"); }
       .main__container-logoheader .logoheader-logincontainer:hover {
         background-color: #004a36; }
-        .main__container-logoheader .logoheader-logincontainer:hover:after {
-          background-image: url("../images/icons/i-up.png"); }
   .main__container-menubar {
     height: 50px;
     width: 100%;
@@ -347,3 +337,5 @@ body {
       color: #FFF;
       text-align: center;
       font-size: 12px; }
+
+/*# sourceMappingURL=index.css.map */
