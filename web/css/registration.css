@@ -1,0 +1,108 @@
+body {
+  min-width: 1000px; }
+
+.regform {
+  width: 100%; }
+  .regform__container {
+    width: 340px;
+    border-radius: 5px;
+    border: 2px solid #f6753e;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .regform__menu {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid lightgray;
+    position: relative; }
+    .regform__menu-button {
+      color: white;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      width: 120px;
+      cursor: pointer;
+      display: inline-block;
+      background-color: #026147;
+      background-image: linear-gradient(#19785e, #026147);
+      margin-left: 10px;
+      margin-top: 10px;
+      font-size: 15px;
+      font-family: Helvetica; }
+      .regform__menu-button:hover {
+        opacity: 0.8; }
+      .regform__menu-button.m-active {
+        background-color: #689a0e;
+        background-image: none;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: auto; }
+        .regform__menu-button.m-active:hover {
+          opacity: 1; }
+    .regform__menu:after {
+      position: absolute;
+      height: 32px;
+      width: 32px;
+      top: 19px;
+      right: 19px;
+      background-image: url("../images/icons/i-locked.png");
+      content: '';
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; }
+  .regform__form {
+    width: 100%;
+    min-height: 200px; }
+    .regform__form-label {
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color: lightgray;
+      font-size: 20px;
+      font-weight: bold; }
+    .regform__form-fields {
+      width: 100%;
+      height: 40px;
+      padding-left: 10px;
+      padding-right: 10px;
+      box-sizing: border-box; }
+      .regform__form-fields__label {
+        width: 40%;
+        display: inline-block;
+        height: 28px;
+        margin-top: 2px; }
+      .regform__form-fields__input {
+        width: 60%;
+        border: 2px solid lightgray;
+        display: inline-block;
+        border-radius: 5px;
+        height: 28px;
+        margin-top: 2px; }
+    .regform__form-agreement {
+      width: 100%;
+      height: 30px;
+      line-height: 20px;
+      text-align: center;
+      color: lightslategrey;
+      font-size: 13px;
+      margin-top: 25px; }
+    .regform__form-enter {
+      width: 120px;
+      height: 50px;
+      color: white;
+      font-size: 18px;
+      line-height: 50px;
+      text-align: center;
+      background-color: #f6753e;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      cursor: pointer; }
+      .regform__form-enter:hover {
+        opacity: 0.7; }
+
+/*# sourceMappingURL=registration.css.map */
