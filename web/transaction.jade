@@ -2,32 +2,13 @@ html
     head
         title My Finance
         link(href="./css/index.css" rel="stylesheet")
+        link(href="./css/transaction.css" rel="stylesheet")
         meta(http-equiv="Content-Type" content="text/html; charset=utf-8/")
     body
         div(class='main__container')
-            div(class='main__container-header')
-                div(class='header__buttons')
-                    div(class='header__button m-selected') Личные финансы
-                    div(class='header__button') Корпоративный сектор
-            div(class='main__container-logoheader')
-                div(class='logoheader-name') ФИНАНСОВЫЙ ПОМОЩНИК
-                div(class='logoheader-icon')
-                div(class='logoheader-buttons')
-                    div(class='logoheader-button m-phone') Контакты
-                    div(class='logoheader-button m-search') Поиск
-                    div(class='logoheader-button m-faq') FAQ
-                div(class='logoheader-logincontainer') Вход
-            div(class='main__container-menubar')
-                div(class='menu__buttons')
-                    div(class='menu__button m-home')
-                    div(class='menu__button') Планирование
-                    div(class='menu__button') Транзакции
-                    div(class='menu__button') Анализ
-                    div(class='menu__button') Друзья
 
-
+            include ./modules/header.jade
             include ./modules/transaction.jade
-
 
             div(class='main__container-footer')
                 div(class='footer__label') © DSamokhina 2016

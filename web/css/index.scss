@@ -136,6 +136,7 @@ body {
             padding-left: 50px;
             line-height: 50px;
             font-size: 18px;
+            text-decoration: none;
             &:before {
                 width: 32px;
                 height: 32px;
@@ -168,6 +169,7 @@ body {
                 padding-left: 30px;
                 padding-right: 30px;
                 cursor: pointer;
+                text-decoration: none;
                 &:hover {
                     background-color: white;
                     color: #00402e;
@@ -183,6 +185,7 @@ body {
                 position: relative;
                 top: 9px;
                 cursor: pointer;
+                text-decoration: none;
                 &:hover {
                     opacity: 0.8;
                     background-color: #2d8259;

@@ -29,7 +29,8 @@ body {
       margin-left: 10px;
       margin-top: 10px;
       font-size: 15px;
-      font-family: Helvetica; }
+      font-family: Helvetica;
+      text-decoration: none; }
       .regform__menu-button:hover {
         opacity: 0.8; }
       .regform__menu-button.m-active {
