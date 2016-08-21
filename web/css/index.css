@@ -209,7 +209,8 @@ body {
       margin: auto;
       left: 0;
       right: 0;
-      cursor: pointer; }
+      cursor: pointer;
+      text-decoration: none; }
       .main__container-promo .promo__registerbutton:hover {
         background-color: #6fa115; }
     .main__container-promo .promo__questions {
