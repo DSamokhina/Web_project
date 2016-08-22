@@ -1,0 +1,40 @@
+.transactform {
+  width: 100%;
+  height: 500px;
+  border: 2px solid #026147;
+  position: relative;
+  display: inline-flex;
+  box-sizing: border-box;
+  &__data {
+    width: 50%;
+    height: 450px;
+    border: 2px solid #f6753e;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    &-captionSum{
+      margin-top: 10px;
+      margin-right: auto;
+      margin-left: auto;
+      border: 2px solid #f6753e;
+      text-align: center;
+      font-size: 20px;
+      height: 25px;
+      color: #f65412;
+      font-weight: bold;
+    }
+    &-valueSum{
+      margin-top: 25px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      height: 45px;
+      font-size: 30px;
+      color: white;
+      background-color: #f6753e;
+    }
+  }
+
+}
