@@ -2,19 +2,30 @@ div(class='transactform')
     div(class='transactform__data')
         div(class='transactform__caption') Внести транзакции
         div(class='transactform__switch')
-            div(class='transactform__switch-outgo m-active') Расход
-            div(class='transactform__switch-profit m-active') Доход
-        div(class='transactform_sum') Сумма
-        input(class='transactform_sum-input' placeholder='сумма')
-        div(class='transactform_date') Дата
-        input(class='transactform_date-input' type='date')
-        div(class='transactform_category') Категория
-        input(class='transactform_category-input' placeholder='продукты')
-        div(class='transactform_comment') Комментарий
-        input(class='transactform_coment-input' placeholder='комментарий')
-        div(class='transactform_add') Добавить
+            div(class='transactform__switch-button m-active') Расход
+            div(class='transactform__switch-button') Доход
+
+        div(class='transactform__label') Сумма
+        div(class='transactform__input-container sum')
+            input(class='transactform__input sum' placeholder='сумма')
+
+        div(class='transactform__label') Дата
+        div(class='transactform__input-container date')
+            input(class='transactform__input date' type='date')
+
+        div(class='transactform__label') Категория
+        div(class='transactform__input-container category')
+            select(class='transactform__input category')
+                option Заработная плата
+                option Продукты
+                option Подарки
+        div(class='transactform__label') Комментарий
+        div(class='transactform__input-container comment')
+            input(class='transactform__input comment' placeholder='комментарий')
+
+        div(class='transactform__add') Добавить
     div(class='transactform__data')
-        div(class='transactform__data-captionSum') Текущее состояние счета
-        div(class='transactform__data-valueSum')
+        div(class='transactform__data-captionsum') Текущее состояние счета
+        div(class='transactform__data-valuesum')
 
 
