@@ -1,0 +1,21 @@
+[{
+    "id": 1,
+    "name": "Наличные",
+    "ammount": 60000,
+    "currency": "RUR"
+}, {
+    "id": 2,
+    "name": "Вклад",
+    "ammount": 140000,
+    "currency": "RUR"
+}, {
+    "id": 3,
+    "name": "Копилка с мелочью",
+    "ammount": 10000,
+    "currency": "RUR"
+}, {
+    "id": 4,
+    "name": "Зарплатная карта",
+    "ammount": 20000,
+    "currency": "RUR"
+}]

@@ -24,8 +24,28 @@ div(class='transactform')
             input(class='transactform__input comment' placeholder='комментарий')
 
         div(class='transactform__add') Добавить
+
+
     div(class='transactform__data')
-        div(class='transactform__data-captionsum') Текущее состояние счета
-        div(class='transactform__data-valuesum')
+        div(class='transactform__caption') Текущее состояние счета
+        div(class='transactform__data-current')
+            table(class='current__table table table-striped table-hover')
+                thead
+                    tr
+                        th ID
+                        th Счет
+                        th Сумма
+                        th Валюта
+                tbody
+
+                    tfoot
+                        tr
+                            td
+                            td
+                            td(data-sum='accounts')
+                            td RUR
+            div(class='current__diagramm')
+
+
 
 
