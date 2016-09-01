@@ -111,7 +111,8 @@ body {
       color: white;
       padding-left: 50px;
       line-height: 50px;
-      font-size: 18px; }
+      font-size: 18px;
+      text-decoration: none; }
       .main__container-logoheader .logoheader-logincontainer:before {
         width: 32px;
         height: 32px;
@@ -139,7 +140,8 @@ body {
         display: inline-block;
         padding-left: 30px;
         padding-right: 30px;
-        cursor: pointer; }
+        cursor: pointer;
+        text-decoration: none; }
         .main__container-menubar .menu__buttons .menu__button:hover {
           background-color: white;
           color: #00402e; }
@@ -152,7 +154,8 @@ body {
         background-position: center;
         position: relative;
         top: 9px;
-        cursor: pointer; }
+        cursor: pointer;
+        text-decoration: none; }
         .main__container-menubar .menu__buttons .m-home:hover {
           opacity: 0.8;
           background-color: #2d8259; }
@@ -209,7 +212,8 @@ body {
       margin: auto;
       left: 0;
       right: 0;
-      cursor: pointer; }
+      cursor: pointer;
+      text-decoration: none; }
       .main__container-promo .promo__registerbutton:hover {
         background-color: #6fa115; }
     .main__container-promo .promo__questions {

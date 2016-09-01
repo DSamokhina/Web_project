@@ -1,9 +1,9 @@
 body {
   min-width: 1000px; }
 
-.logform {
+.regform {
   width: 100%; }
-  .logform__container {
+  .regform__container {
     width: 340px;
     border-radius: 5px;
     border: 2px solid #f6753e;
@@ -11,12 +11,12 @@ body {
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px; }
-  .logform__menu {
+  .regform__menu {
     width: 100%;
     height: 70px;
     border-bottom: 1px solid lightgray;
     position: relative; }
-    .logform__menu-button {
+    .regform__menu-button {
       color: white;
       height: 50px;
       line-height: 50px;
@@ -31,17 +31,17 @@ body {
       font-size: 15px;
       font-family: Helvetica;
       text-decoration: none; }
-      .logform__menu-button:hover {
+      .regform__menu-button:hover {
         opacity: 0.8; }
-      .logform__menu-button.m-active {
+      .regform__menu-button.m-active {
         background-color: #689a0e;
         background-image: none;
         font-size: 17px;
         font-weight: bold;
         cursor: auto; }
-        .logform__menu-button.m-active:hover {
+        .regform__menu-button.m-active:hover {
           opacity: 1; }
-    .logform__menu:after {
+    .regform__menu:after {
       position: absolute;
       height: 32px;
       width: 32px;
@@ -52,10 +52,10 @@ body {
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center; }
-  .logform__form {
+  .regform__form {
     width: 100%;
     min-height: 200px; }
-    .logform__form-label {
+    .regform__form-label {
       width: 100%;
       height: 50px;
       line-height: 50px;
@@ -63,30 +63,33 @@ body {
       color: lightgray;
       font-size: 20px;
       font-weight: bold; }
-    .logform__form-field {
+    .regform__form-fields {
       width: 100%;
-      height: 60px;
+      height: 40px;
       padding-left: 10px;
       padding-right: 10px;
       box-sizing: border-box; }
-      .logform__form-field__input {
-        height: 40px;
-        line-height: 40px;
-        padding-left: 15px;
-        margin-top: 10px;
-        color: #454545;
-        font-size: 15px;
-        width: 100%; }
-    .logform__form-recover {
-      color: #026147;
-      font-size: 15px;
-      font-style: italic;
-      text-decoration: underline;
-      width: 110px;
-      text-align: right;
-      margin-left: 217px;
-      cursor: pointer; }
-    .logform__form-enter {
+      .regform__form-fields__label {
+        width: 40%;
+        display: inline-block;
+        height: 28px;
+        margin-top: 2px; }
+      .regform__form-fields__input {
+        width: 60%;
+        border: 2px solid lightgray;
+        display: inline-block;
+        border-radius: 5px;
+        height: 28px;
+        margin-top: 2px; }
+    .regform__form-agreement {
+      width: 100%;
+      height: 30px;
+      line-height: 20px;
+      text-align: center;
+      color: lightslategrey;
+      font-size: 13px;
+      margin-top: 25px; }
+    .regform__form-enter {
       width: 120px;
       height: 50px;
       color: white;
@@ -98,9 +101,9 @@ body {
       margin-bottom: 10px;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 10px;
+      margin-top: 20px;
       cursor: pointer; }
-      .logform__form-enter:hover {
+      .regform__form-enter:hover {
         opacity: 0.7; }
 
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=registration.css.map */

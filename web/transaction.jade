@@ -2,18 +2,15 @@ html
     head
         title My Finance
         link(href="./css/index.css" rel="stylesheet")
-        link(href="./css/login.css" rel="stylesheet")
+        link(href="./css/transaction.css" rel="stylesheet")
         meta(http-equiv="Content-Type" content="text/html; charset=utf-8/")
     body
         div(class='main__container')
 
             include ./modules/header.jade
-            include ./modules/loginForm.jade
+            include ./modules/transaction.jade
 
             div(class='main__container-footer')
                 div(class='footer__label') © DSamokhina 2016
 
-    script(type='text/javascript' src='./js/lib/jquery.js')
-
     script(type='text/javascript' src='./js/index.js')
-    script(type='text/javascript' src='./js/login.js')
