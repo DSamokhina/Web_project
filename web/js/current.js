@@ -5,7 +5,7 @@ $(function () {
     });
 
     $.ajax({
-        url: '/web/data/accounts.json',
+        url: './data/accounts.json',
         dataType: 'JSON',
         success: function (data) {
             var sum = 0;
