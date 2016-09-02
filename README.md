@@ -24,6 +24,7 @@
     * JADE - шаблонизатор
     * SCSS - CSS препроцессор
     * light-server - npm для запуска локального сервера
+    * http://beta.json-generator.com/ - для генерации тестовых данных
 
 * Баузер:
     * jQuery
