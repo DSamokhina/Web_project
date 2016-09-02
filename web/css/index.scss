@@ -158,6 +158,7 @@ body {
         & .menu__buttons {
             width: 1000px;
             height: 100%;
+            white-space: nowrap;
             margin: auto;
             & .menu__button {
                 width: 100px;
@@ -270,8 +271,8 @@ body {
                 color: #FFFFFF;
                 &:after {
                     position: absolute;
-                    right: 4;
-                    top: 4;
+                    right: 4px;
+                    top: 4px;
                     content: '';
                     width: 32px;
                     height: 32px;

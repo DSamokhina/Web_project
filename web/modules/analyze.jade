@@ -1,0 +1,30 @@
+// https://gist.github.com/mnewt/4228037
+div(class="container analyze__container")
+    div(id="content")
+        ul(id="tabs" class="nav nav-tabs" data-tabs="tabs")
+            li(class="active")
+                a(href="#dynamics" data-toggle="tab") Динамика расходов/доходов
+            li
+                a(href="#categories" data-toggle="tab") Категории
+
+
+        div(id="my-tab-content" class="tab-content")
+            div(class="tab-pane active" id="dynamics")
+                div(class='analyze__caption') Динамика расходов/доходов
+                div(class='analyze__filter')
+                    input(class='analyze__filter-input' placeholder='Поиск')
+                    div(class='analyze__filter-button')
+                div
+                    table(class='current__table table table-striped table-hover' data-table='dynamics')
+                        thead
+                            tr
+                                th #
+                                th Тип
+                                th Сумма
+                                th Магазин
+                                th Когда
+                                th Адрес
+                        tbody
+
+            div(class="tab-pane" id="categories")
+                div(class='analyze__caption') Категории

@@ -1,0 +1,50 @@
+.analyze {
+    &__caption {
+        margin-left: 30px;
+        font-size: 18px;
+        color: #444444;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    &__container {
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    &__filter {
+        display: inline-flex;
+        &-input {
+            display: inline-block;
+            height: 32px;
+            box-sizing: border-box;
+            width: 200px;
+            padding-left: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        &-button {
+            display: inline-block;
+            height: 32px;
+            width: 32px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('../images/icons/i-search.png');
+            cursor: pointer;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+    &__isspending {
+        height: 24px;
+        width: 24px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &.m-true {
+            background-image: url('../images/icons/i-transaction-true.png');
+        }
+        &.m-false {
+            background-image: url('../images/icons/i-transaction-false.png');
+        }
+    }
+}

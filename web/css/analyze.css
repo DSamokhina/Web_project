@@ -1,0 +1,42 @@
+.analyze__caption {
+  margin-left: 30px;
+  font-size: 18px;
+  color: #444444;
+  margin-bottom: 20px;
+  font-weight: bold; }
+
+.analyze__container {
+  width: 100% !important;
+  box-sizing: border-box;
+  padding: 20px; }
+
+.analyze__filter {
+  display: inline-flex; }
+  .analyze__filter-input {
+    display: inline-block;
+    height: 32px;
+    box-sizing: border-box;
+    width: 200px;
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .analyze__filter-button {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/icons/i-search.png");
+    cursor: pointer; }
+    .analyze__filter-button:hover {
+      opacity: 0.7; }
+
+.analyze__isspending {
+  height: 24px;
+  width: 24px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .analyze__isspending.m-true {
+    background-image: url("../images/icons/i-transaction-true.png"); }
+  .analyze__isspending.m-false {
+    background-image: url("../images/icons/i-transaction-false.png"); }
