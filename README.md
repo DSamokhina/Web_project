@@ -19,12 +19,14 @@
     
 ### Используется
 
+* IDE - WebStorm
 
 * Разработка
     * JADE - шаблонизатор
     * SCSS - CSS препроцессор
     * light-server - npm для запуска локального сервера
-    * http://beta.json-generator.com/ - для генерации тестовых данных
+    * koa - в качестве сервера была попытка начать использовать и изучить koa, но решила использовать github pages и файлы JSON с данными
+    * GIT - система контроля версий
 
 * Баузер:
     * jQuery
@@ -36,3 +38,9 @@
     * TwitterBootstrap
         * стили для табличек
         * табы (стили + переключение)
+        
+* Другие инструменты
+    * http://beta.json-generator.com/ - для генерации тестовых данных
+    * http://www.cssmatic.com/box-shadow - для генерации CSS для теней
+    * http://apps.eky.hk/css-triangle-generator/ - для генерации CSS треугольника 
+    * http://www.cssmatic.com/gradient-generator - для генерации CSS градиента

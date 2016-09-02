@@ -11,7 +11,55 @@ div(class="container analyze__container")
         div(id="my-tab-content" class="tab-content")
             div(class="tab-pane active" id="dynamics")
                 div(class='analyze__caption') Динамика расходов/доходов
-                div(class='analyze__filter')
+
+
+
+
+
+                - var w = 1050;
+                - var h = 450;
+                - var o = 25; //сдвиг
+                div(data-svg='options' style='display: none;') {"w": #{w},"h": #{h},"o": #{o}}
+                -var positions = [];
+
+                svg(width="#{w}" height="#{h}" class='analyze__svg' data-svg='dynamics')
+                    // оси
+                    line(x1="#{o}" y1="#{h / 2}" x2='#{w - o}' y2="#{h / 2}" stroke-width="1" stroke="#5e5e5e")
+                    line(x1="#{o}" y1="#{o}" x2='#{o}' y2="#{h - o}" stroke-width="1" stroke="#5e5e5e")
+
+                    // деления вертикальнье
+                    - for (var y = o; y <= h - o; y += (h - o * 2) / 8) // 8 вертикальных делений
+                        line(x1=o / 2 y1=y x2=(o) y2=y stroke-width="1" stroke="#5e5e5e")
+                        text(x=(0) y=y transform="rotate(-45, " + o + ", " + y + ") translate(5, -10)" style="font-size: 10;stroke: #00ff00;fill: #0000ff;") 10000
+
+                    // деления для дат
+                    - for (var i = 1; i <= 31; i ++) // 8 вертикальных делений
+                        - var x = o + i *  (w - 2 * o) / 31
+                        - positions.push(x)
+                        line(x1=x y1=(h / 2 - 5) x2=x y2=(h / 2 + 5) stroke-width="1" stroke="#5e5e5e" class='q')
+                        text(x=x y=(h / 2) transform="translate(-5, 15)" style="font-size: 10;stroke: #5e5e5e;") #{i}
+
+                    //кутящаяся свинка
+                    image(href="./images/icons/i-logo.png" x=(w-40) y="0" height="40" width="40")
+                        animateTransform(attributeName="transform"
+                                         type="rotate"
+                                         from=("0 " + (w-20).toString() + ' 20')
+                                         to=("360 " + (w-20).toString() + ' 20')
+                                         dur="5s"
+                                         repeatCount="indefinite")
+
+                div(data-svg='positions' style='display: none;') #{positions}
+
+
+
+
+
+
+
+
+
+
+    div(class='analyze__filter')
                     input(class='analyze__filter-input' placeholder='Поиск')
                     div(class='analyze__filter-button')
                 div
