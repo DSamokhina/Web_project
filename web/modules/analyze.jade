@@ -20,7 +20,8 @@ div(class="container analyze__container")
                 - var h = 450;
                 - var o = 25; //сдвиг
                 div(data-svg='options' style='display: none;') {"w": #{w},"h": #{h},"o": #{o}}
-                -var positions = [];
+                -var positionsX = [];
+                -var positionsY = [];
 
                 svg(width="#{w}" height="#{h}" class='analyze__svg' data-svg='dynamics')
                     // оси
@@ -29,13 +30,13 @@ div(class="container analyze__container")
 
                     // деления вертикальнье
                     - for (var y = o; y <= h - o; y += (h - o * 2) / 8) // 8 вертикальных делений
+                        - positionsY.push(y);
                         line(x1=o / 2 y1=y x2=(o) y2=y stroke-width="1" stroke="#5e5e5e")
-                        text(x=(0) y=y transform="rotate(-45, " + o + ", " + y + ") translate(5, -10)" style="font-size: 10;stroke: #00ff00;fill: #0000ff;") 10000
 
                     // деления для дат
                     - for (var i = 1; i <= 31; i ++) // 8 вертикальных делений
                         - var x = o + i *  (w - 2 * o) / 31
-                        - positions.push(x)
+                        - positionsX.push(x)
                         line(x1=x y1=(h / 2 - 5) x2=x y2=(h / 2 + 5) stroke-width="1" stroke="#5e5e5e" class='q')
                         text(x=x y=(h / 2) transform="translate(-5, 15)" style="font-size: 10;stroke: #5e5e5e;") #{i}
 
@@ -48,7 +49,8 @@ div(class="container analyze__container")
                                          dur="5s"
                                          repeatCount="indefinite")
 
-                div(data-svg='positions' style='display: none;') #{positions}
+                div(data-svg='positionsX' style='display: none;') #{JSON.stringify(positionsX)}
+                div(data-svg='positionsY' style='display: none;') #{JSON.stringify(positionsY)}
 
 
 
